@@ -33,8 +33,18 @@ Example:
   process.exit(0);
 }
 
+/**
+ * Converts a kebab-case string to camelCase.
+ * @param str The string to convert.
+ * @returns The converted camelCase string.
+ */
 const toCamelCase = (str: string): string => str.replace(/-([a-z])/g, g => g[1].toUpperCase());
 
+/**
+ * Parses a string value into its appropriate type (boolean, number, array, or string).
+ * @param value The string value to parse.
+ * @returns The parsed value.
+ */
 const parseValue = (value: string): any => {
   if (value === "true") return true;
   if (value === "false") return false;
@@ -47,6 +57,10 @@ const parseValue = (value: string): any => {
   return value;
 };
 
+/**
+ * Parses command-line arguments into a Bun build configuration object.
+ * @returns A partial Bun build configuration object.
+ */
 function parseArgs(): Partial<Bun.BuildConfig> {
   const config: Partial<Bun.BuildConfig> = {};
   const args = process.argv.slice(2);
@@ -92,6 +106,11 @@ function parseArgs(): Partial<Bun.BuildConfig> {
   return config;
 }
 
+/**
+ * Formats a file size in bytes into a human-readable string.
+ * @param bytes The file size in bytes.
+ * @returns A formatted file size string (e.g., "1.23 MB").
+ */
 const formatFileSize = (bytes: number): string => {
   const units = ["B", "KB", "MB", "GB"];
   let size = bytes;

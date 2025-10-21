@@ -8,6 +8,9 @@
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 
+/**
+ * Initializes the React application and renders it to the DOM.
+ */
 function start() {
   const root = createRoot(document.getElementById("root")!);
   root.render(<App />);
