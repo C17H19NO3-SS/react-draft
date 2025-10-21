@@ -15,8 +15,7 @@ You need to have [Bun](https://bun.sh/) installed on your machine.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/C17H19NO3-SS/react-draft.git
-    cd your-repo-name
+    git clone https://github.com/C17H19NO3-SS/react-draft.git .
     ```
 
 2.  **Install dependencies:**
@@ -38,10 +37,6 @@ Runs the app in development mode. This will start a development server that watc
 ### `bun start`
 
 Starts the production server. This command should be used after you have built the project. It serves the optimized, static files from the `dist` directory.
-
-### `bun run build.ts`
-
-Builds the app for production to the `dist` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build script accepts several command-line arguments to customize the output. Run `bun run build.ts --help` for more information.
 
 ## 📁 Project Structure
 
