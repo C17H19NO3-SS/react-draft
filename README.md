@@ -15,7 +15,7 @@ You need to have [Bun](https://bun.sh/) installed on your machine.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/C17H19NO3-SS/react-draft.git
     cd your-repo-name
     ```
 
