@@ -1,3 +1,7 @@
+/**
+ * Renders the footer section of the website.
+ * @returns {JSX.Element} The rendered footer component.
+ */
 export const Footer = () => (
   <div className="footer">
     <div className="footer-group-1">
